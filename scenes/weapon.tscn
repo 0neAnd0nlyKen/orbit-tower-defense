@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://dljajuwbpimt0"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_6nu22"]
+radius = 50.0
+
+[sub_resource type="Gradient" id="Gradient_xasec"]
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_uxn4k"]
+gradient = SubResource("Gradient_xasec")
+
+[node name="weapon" type="Area2D" unique_id=155060632]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1606087718]
+shape = SubResource("CircleShape2D_6nu22")
+
+[node name="placholder" type="Sprite2D" parent="." unique_id=1238739548]
+texture = SubResource("GradientTexture2D_uxn4k")

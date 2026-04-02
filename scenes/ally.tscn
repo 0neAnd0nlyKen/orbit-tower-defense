@@ -29,6 +29,7 @@ offset_bottom = 50.0
 grow_horizontal = 2
 grow_vertical = 2
 
+[node name="weapon" parent="." unique_id=155060632 instance=ExtResource("3_xx1w2")]
 
 [connection signal="button_down" from="Button" to="." method="_on_button_button_down"]
 [connection signal="button_up" from="Button" to="." method="_on_button_button_up"]
