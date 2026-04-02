@@ -1,0 +1,34 @@
+[gd_scene format=3 uid="uid://tceqem47v86k"]
+
+[ext_resource type="Script" uid="uid://ji5mhvogbqkf" path="res://scripts/ally.gd" id="1_p4fys"]
+[ext_resource type="Texture2D" uid="uid://dwjlhdg5lnprf" path="res://icon.svg" id="2_xx1w2"]
+[ext_resource type="PackedScene" uid="uid://dljajuwbpimt0" path="res://scenes/weapon.tscn" id="3_xx1w2"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_darf4"]
+size = Vector2(120, 120)
+
+[node name="CharacterBody2D" type="CharacterBody2D" unique_id=1079837063]
+script = ExtResource("1_p4fys")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=310110566]
+texture = ExtResource("2_xx1w2")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1752152559]
+shape = SubResource("RectangleShape2D_darf4")
+
+[node name="Button" type="Button" parent="." unique_id=1040425987]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -50.0
+offset_top = -50.0
+offset_right = 50.0
+offset_bottom = 50.0
+grow_horizontal = 2
+grow_vertical = 2
+
+
+[connection signal="button_down" from="Button" to="." method="_on_button_button_down"]
+[connection signal="button_up" from="Button" to="." method="_on_button_button_up"]
