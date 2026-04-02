@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://dxiivknmxgmxp"]
+
+[ext_resource type="PackedScene" uid="uid://tceqem47v86k" path="res://scenes/ally.tscn" id="1_nnsk1"]
+
+[node name="world" type="Node2D" unique_id=500965160]
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=816711304]
