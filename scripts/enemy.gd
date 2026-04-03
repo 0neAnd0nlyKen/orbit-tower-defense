@@ -35,5 +35,7 @@ func _on_pivot_point_ready() -> void:
 func _on_area_2d_area_entered(area: Area2D) -> void:
 	if area.name == "weapon" or area.name == "Area2D":
 		health -= 5
-		print_debug("health is ", health)
+		if health <= 0:
+			queue_free()
+		#print_debug("health is ", health)
 	#print_debug(area.name)
