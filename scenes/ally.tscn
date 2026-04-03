@@ -7,8 +7,9 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_darf4"]
 size = Vector2(120, 120)
 
-[node name="CharacterBody2D" type="CharacterBody2D" unique_id=1079837063]
+[node name="CharacterBody2D" type="CharacterBody2D" unique_id=1079837063 node_paths=PackedStringArray("weapon")]
 script = ExtResource("1_p4fys")
+weapon = NodePath("weapon")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=310110566]
 texture = ExtResource("2_xx1w2")
