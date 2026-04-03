@@ -12,7 +12,7 @@
 [node name="Camera2D" type="Camera2D" parent="." unique_id=816711304]
 
 [node name="Bg" type="Sprite2D" parent="Camera2D" unique_id=1539793770]
-position = Vector2(24, -16)
+scale = Vector2(0.96, 0.96)
 texture = ExtResource("1_qfnet")
 
 [node name="CharacterBody2D" parent="." unique_id=1079837063 instance=ExtResource("1_nnsk1")]
@@ -23,9 +23,10 @@ pivotPoint = NodePath("PivotPoint")
 spawner = NodePath("Spawner")
 
 [node name="PivotPoint" parent="EnemyEnv" unique_id=2017627900 instance=ExtResource("2_4wyf3")]
-position = Vector2(400, 0)
+position = Vector2(195, 0)
 
 [node name="Spawner" type="Node2D" parent="EnemyEnv" unique_id=1549742368 node_paths=PackedStringArray("spawnPoint")]
+position = Vector2(-115, 0)
 script = ExtResource("3_k0juu")
 spawnPoint = NodePath("../PivotPoint")
 

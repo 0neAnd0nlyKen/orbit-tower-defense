@@ -16,8 +16,8 @@ func _process(delta: float) -> void:
 	
 	if spawnTimer >= spawnRate:
 		spawnTimer = 0.0
-		if get_child_count() < maxEnemies:
+		if get_child_count() <= maxEnemies:
 			var newEnemy: Enemy = enemy.instantiate()
-			newEnemy.radius = radius
 			add_child(newEnemy)
-			newEnemy.position = spawnPoint.global_position  # or set a spawn position
+			#newEnemy.position = spawnPoint.position
+			newEnemy.radius = radius

@@ -5,7 +5,7 @@ extends Node2D
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	if (spawner and pivotPoint):
-		spawner.radius = spawner.position.distance_to(pivotPoint.position)
+		spawner.radius = -(spawner.global_position.distance_to(pivotPoint.global_position))
 	else:
 		print("WHERE")
 
