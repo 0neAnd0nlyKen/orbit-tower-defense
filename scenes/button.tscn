@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://y2u2c45vj540"]
+
+[ext_resource type="Texture2D" uid="uid://ctwbxjldpbkwj" path="res://BUTTON.png" id="1_mi6dp"]
+
+[node name="PlayButton" type="Button" unique_id=814538464]
+offset_right = 456.0
+offset_bottom = 163.0
+icon = ExtResource("1_mi6dp")
+flat = true

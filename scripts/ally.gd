@@ -18,6 +18,8 @@ func _ready():
 func _process(delta: float) -> void:
 	if isDragging:
 		position = get_global_mouse_position()
+		if position.x < 0:
+			position.x = 0
 	
 	# Update orbit angle
 	orbit_angle += orbit_speed * delta
