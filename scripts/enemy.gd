@@ -33,7 +33,7 @@ func _on_pivot_point_ready() -> void:
 	pass # Replace with function body.
 
 func _on_area_2d_area_entered(area: Area2D) -> void:
-	if area.name == "weapon" or area.name == "Area2D":
+	if area is Weapon1:
 		health -= 5
 		if health <= 0:
 			queue_free()
