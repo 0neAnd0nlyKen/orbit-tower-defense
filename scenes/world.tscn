@@ -36,3 +36,4 @@ spawnPoint = NodePath("../PivotPoint")
 visible = false
 
 [connection signal="ready" from="EnemyEnv/PivotPoint" to="EnemyEnv/Spawner/CharacterBody2D" method="_on_pivot_point_ready"]
+[connection signal="child_exiting_tree" from="EnemyEnv/Spawner" to="." method="_on_spawner_child_exiting_tree"]

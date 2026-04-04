@@ -9,7 +9,8 @@ class_name EnemySpawner
 var spawnTimer: float = 0.0
 
 func _ready() -> void:
-	child_exiting_tree.connect(_on_any_child_exiting)
+	pass
+	#child_exiting_tree.connect(_on_any_child_exiting)
 
 func _process(delta: float) -> void:
 	spawnTimer += delta
@@ -22,6 +23,6 @@ func _process(delta: float) -> void:
 			#newEnemy.position = spawnPoint.position
 			newEnemy.radius = radius
 
-func _on_any_child_exiting(child_node: Node):
-	print("A child is being removed: ", child_node.name)
-	print("Child type: ", child_node.get_class())
+#func _on_any_child_exiting(child_node: Node):
+	#print("A child is being removed: ", child_node.name)
+	#print("Child type: ", child_node.get_class())

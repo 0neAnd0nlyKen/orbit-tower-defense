@@ -1,9 +1,15 @@
 extends Node
 
+var coins:int = 0
+var score:int = 0
+var goal:int
 
-# Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	pass 
+	goal = 20
 
-func _process(delta: float) -> void:
-	pass
+func _process(_delta: float) -> void:
+	if score >= goal:
+		get_tree().paused = true
+
+func _on_spawner_child_exiting_tree(_node: Node) -> void:
+	score += 1
